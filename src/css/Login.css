@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Login Container */
+  .login-container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  
+  .login-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Title */
+  .login-title {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .login-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .login-input:focus {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Button */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #ff7b54;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-button:hover {
+    background: #ff5722;
+    transform: scale(1.05);
+  }
+  
+  /* Register Text */
+  .login-register-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .login-register-link {
+    color: #ffecb3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-register-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 780px) {
+    .login-container {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

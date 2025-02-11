@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+  background: linear-gradient(135deg, #2e3192, #1bffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Weather Container */
+.weather-container {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.weather-container:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.weather-title {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Logout Button */
+.weather-logout-button {
+  padding: 10px 15px;
+  background: #ff4b5c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.weather-logout-button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Input Section */
+.weather-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.weather-input {
+  width: 65%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.weather-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.weather-input:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Get Weather Button */
+.weather-button {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #00c9ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.weather-button:hover {
+  background: #007ea7;
+  transform: scale(1.05);
+}
+
+/* Weather Info */
+.weather-info {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.weather-city {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.weather-temp,
+.weather-humidity,
+.weather-pressure,
+.weather-wind {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.weather-icon {
+  width: 80px;
+  margin-top: 10px;
+  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.4));
+}
+
+/* Responsive Design */
+@media (max-width: 790px) {
+  .weather-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
