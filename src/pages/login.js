@@ -11,9 +11,9 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const response = await axios.post("https://weather-app-1-qq0g.onrender.com/api/auth/login", { email, password });
       localStorage.setItem("token", response.data.token);
-      
+
       navigate("/weather");
     } catch (error) {
       alert("Login failed! Please check your credentials.");
